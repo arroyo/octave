@@ -1,0 +1,12 @@
+  
+version: '3.7'
+
+services:
+  
+  octave:
+    container_name: octave
+    build: ./docker/
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
